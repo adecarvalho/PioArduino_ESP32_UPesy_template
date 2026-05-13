@@ -4,7 +4,7 @@
 
 // const
 const uint32_t PERIOD = 2000;
-const uint8_t LED_INTERNAL_PIN = 13;
+const uint8_t LED_INTERNAL_PIN = 2;
 
 // prototypes
 void action();
@@ -22,7 +22,7 @@ void action()
 //************ */
 void setup()
 {
-  Serial.begin(1152000);
+  Serial.begin(115200);
   Wire.begin();
   //
   pinMode(LED_INTERNAL_PIN, OUTPUT);
